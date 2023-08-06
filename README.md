@@ -1,4 +1,4 @@
-# Your UI Library Name
+# CJE UI Library
 
 Your UI Library Name is a collection of reusable and customizable components that simplify the process of building modern user interfaces. It provides a wide range of UI elements and styles to enhance the visual appeal and functionality of web applications.
 
