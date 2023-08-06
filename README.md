@@ -1,6 +1,6 @@
 # CJE UI Library
 
-Your UI Library Name is a collection of reusable and customizable components that simplify the process of building modern user interfaces. It provides a wide range of UI elements and styles to enhance the visual appeal and functionality of web applications.
+CJE UI Library! is a collection of reusable and customizable components that simplify the process of building modern user interfaces. It provides a wide range of UI elements and styles to enhance the visual appeal and functionality of web applications.
 
 ## Table of Contents
 
@@ -11,7 +11,7 @@ Your UI Library Name is a collection of reusable and customizable components tha
 
 ## Installation
 
-You can install Your UI Library Name via npm:
+You can install CJE UI Library via npm:
 
 ```bash
 npm install @cje/ui-library
@@ -19,7 +19,7 @@ npm install @cje/ui-library
 
 ## Usage
 
-To start using Your UI Library Name components, import them into your project:
+To start using CJE UI Library components, import them into your project:
 
 ## License
 
