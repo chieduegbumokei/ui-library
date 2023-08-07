@@ -1,6 +1,6 @@
 {
-  "name": "cje-ui-library",
-  "private": true,
+  "name": "@cje/cje-ui-library",
+  "private": false,
   "version": "0.0.1",
   "type": "module",
   "main": "./dist/cje-ui-library.umd.js",
@@ -75,7 +75,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/chieduegbumokei/ui-library"
+    "url": "git+https://github.com/chieduegbumokei/ui-library.git"
   },
   "keywords": [],
   "author": "Chiedu Egbumokei",
@@ -83,5 +83,6 @@
     "url": "https://github.com/chieduegbumokei/ui-library/issues"
   },
   "homepage": "https://github.com/chieduegbumokei/ui-library#readme",
-  "license": "MIT"
+  "license": "MIT",
+  "description": "CJE UI Library! is a collection of reusable and customizable components that simplify the process of building modern user interfaces. It provides a wide range of UI elements and styles to enhance the visual appeal and functionality of web applications."
 }
