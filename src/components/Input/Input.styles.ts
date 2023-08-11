@@ -29,6 +29,7 @@ export const Container = styled.input<ContainerStyle>`
   &:focus-visible,
   &:focus-within {
     border-color: ${(props) => props.hbc};
+    outline: ${(props) => props.hbc};
   }
 
   &:disabled {

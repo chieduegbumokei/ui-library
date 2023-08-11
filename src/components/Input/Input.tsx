@@ -22,7 +22,7 @@ const Input = ({
   id,
   dataTestId,
   borderColor = '#595959',
-  hoverColor = '',
+  hoverColor = '#5C52CC',
   title,
   placeholder,
   error = false,
