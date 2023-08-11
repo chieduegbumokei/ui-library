@@ -6,12 +6,12 @@ interface Props {
   size?: 'small' | 'medium' | 'large'
   id?: string
   dataTestId?: string
-  disabled: boolean
+  disabled?: boolean
   text: string
-  textColor: string
-  hoverTextColor: string
-  type: 'primary' | 'secondary'
-  onClick: () => void
+  textColor?: string
+  hoverTextColor?: string
+  type?: 'primary' | 'secondary'
+  onClick?: () => void
 }
 
 const Button = ({
@@ -25,7 +25,7 @@ const Button = ({
   disabled = false,
   text = 'Button',
   type = 'primary',
-  onClick,
+  onClick = () => {},
 }: Props) => {
   return (
     <Container
