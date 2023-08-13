@@ -3,7 +3,7 @@ import { fireEvent, render, screen } from '@testing-library/react'
 import Button from './Button'
 
 describe('Button Tests', () => {
-  it('text is shown', () => {
+  it('Text is shown', () => {
     const text = 'Submit'
 
     render(<Button text={text}></Button>)
