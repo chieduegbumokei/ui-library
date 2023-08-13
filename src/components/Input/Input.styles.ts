@@ -3,7 +3,7 @@ import { styled } from 'styled-components'
 type ContainerStyle = {
   bc: string
   hbc: string
-  err: boolean
+  err: string
 }
 
 export const Container = styled.input<ContainerStyle>`
@@ -13,7 +13,7 @@ export const Container = styled.input<ContainerStyle>`
   padding: 0 1rem;
   border-radius: 8px;
   background-color: #ffffff;
-  border: 1px solid ${(props) => (props.err ? '#F5222D' : props.bc)};
+  border: 1px solid ${(props) => (props.err === 'true' ? '#F5222D' : props.bc)};
   box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.15);
   font-size: 12px;
   color: #6e7191;
