@@ -1,16 +1,16 @@
-import type { Preview } from "@storybook/react";
-import { createGlobalStyle } from "styled-components";
-import { withThemeFromJSXProvider } from "@storybook/addon-styling";
+import type { Preview } from '@storybook/react'
+import { createGlobalStyle } from 'styled-components'
+import { withThemeFromJSXProvider } from '@storybook/addon-styling'
 
 const GlobalStyles = createGlobalStyle`
   body {
-    font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
   }
-`;
+`
 
 const preview: Preview = {
   parameters: {
-    actions: { argTypesRegex: "^on[A-Z].*" },
+    actions: { argTypesRegex: '^on[A-Z].*' },
     controls: {
       matchers: {
         color: /(background|color)$/i,
@@ -23,6 +23,6 @@ const preview: Preview = {
       GlobalStyles,
     }),
   ],
-};
+}
 
-export default preview;
+export default preview
