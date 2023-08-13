@@ -1,6 +1,13 @@
 import { describe, expect, it, vi } from 'vitest'
 import { fireEvent, render, screen } from '@testing-library/react'
 import Button from './Button'
+import { composeStory } from '@storybook/react'
+
+import meta, { Primary, Secondary } from './Button.stories'
+
+const PrimaryButton = composeStory(Primary, meta)
+
+const SecondaryButton = composeStory(Secondary, meta)
 
 describe('Button Tests', () => {
   it('Text is shown', () => {
@@ -88,20 +95,12 @@ describe('Button Tests', () => {
   })
 
   it('Primary type', async () => {
-    const text = 'Submit'
     const testId = 'btn'
-    const type = 'primary'
     const backgroundColor = 'red'
     const color = 'red'
 
     render(
-      <Button
-        text={text}
-        dataTestId={testId}
-        type={type}
-        backgroundColor={backgroundColor}
-        textColor={color}
-      ></Button>,
+      <PrimaryButton dataTestId={testId} backgroundColor={backgroundColor} textColor={color} />,
     )
 
     const button = screen.getByTestId(testId)
@@ -112,20 +111,12 @@ describe('Button Tests', () => {
   })
 
   it('Secondary type', async () => {
-    const text = 'Submit'
     const testId = 'btn'
-    const type = 'secondary'
     const backgroundColor = 'yellow'
     const color = 'yellow'
 
     render(
-      <Button
-        text={text}
-        dataTestId={testId}
-        type={type}
-        backgroundColor={backgroundColor}
-        textColor={color}
-      ></Button>,
+      <SecondaryButton dataTestId={testId} backgroundColor={backgroundColor} textColor={color} />,
     )
 
     const button = screen.getByTestId(testId)

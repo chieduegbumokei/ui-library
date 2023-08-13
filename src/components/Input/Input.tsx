@@ -43,7 +43,7 @@ const Input = ({
         placeholder={placeholder}
         bc={borderColor}
         hbc={hoverColor}
-        err={error}
+        err={error.toString()}
       />
       {error && <ErrorMessage>{errorMessage}</ErrorMessage>}
     </Wrapper>
